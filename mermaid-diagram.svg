@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1335.9919999999997 1200.5" width="1335.9919999999997" height="1200.5" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Deterministic_Boundaries" data-label="Deterministic Boundaries">
+  <rect x="40" y="708.5999999999999" width="1255.9919999999997" height="96.9" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="708.5999999999999" width="1255.9919999999997" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="722.5999999999999" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Deterministic Boundaries</text>
+</g>
+<polyline class="edge" data-from="User" data-to="L1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="541.6927499999999,76.9 541.6927499999999,124.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L1" data-to="L2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="541.6927499999999,161.8 541.6927499999999,209.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L2" data-to="L3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="541.6927499999999,246.70000000000002 541.6927499999999,294.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L3" data-to="BlockVerdict" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Risk &gt;= 0.70 / Block Signature" points="490.48808333333324,331.6 490.48808333333324,537.4 445.54988333333324,537.4 445.54988333333324,617.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L3" data-to="IsolationPrompt" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Risk &lt; 0.70 Safe / Step-Up" points="592.8974166666666,331.6 592.8974166666666,367.6 724.8323833333332,367.6 724.8323833333332,447.90000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="IsolationPrompt" data-to="Agent" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="724.8323833333332,484.8 724.8323833333332,532.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Agent" data-to="L4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="724.8323833333332,569.7 724.8323833333332,617.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="BankEngine" data-to="L5" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="900.0979499999999,996.6999999999998 900.0979499999999,1038.6999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L5" data-to="EgressResponse" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="900.0979499999999,1075.6 900.0979499999997,1123.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L4" data-to="DB1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="724.8323833333332,654.6 724.8323833333332,703.5999999999999 221.84049999999996,703.5999999999999 221.84049999999996,752.5999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L4" data-to="DB2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="724.8323833333332,654.6 724.8323833333332,703.5999999999999 556.6979999999999,703.5999999999999 556.6979999999999,752.5999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L4" data-to="DB3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="724.8323833333332,654.6 724.8323833333332,703.5999999999999 849.6889999999999,703.5999999999999 849.6889999999999,752.5999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L4" data-to="DB4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="724.8323833333332,654.6 724.8323833333332,703.5999999999999 1140.8274999999996,703.5999999999999 1140.8274999999996,752.5999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB1" data-to="RejectVerdict" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Rejected / MFA Needed" points="166.5603333333333,789.4999999999999 166.56033333333332,895.4999999999998 238.92758333333333,895.4999999999998 238.92758333333333,939.7999999999997 578.5163499999999,939.7999999999997 578.5163499999999,945.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB2" data-to="RejectVerdict" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Rejected / MFA Needed" points="509.69233333333324,789.4999999999999 509.69233333333324,871.4999999999998 526.5401333333332,871.4999999999998 526.5401333333332,915.7999999999997 619.06575,915.7999999999997 619.06575,945.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB3" data-to="RejectVerdict" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Rejected / MFA Needed" points="808.3643333333332,789.4999999999999 808.3643333333332,847.4999999999998 727.2501333333332,847.4999999999998 727.2501333333332,891.7999999999997 659.6151499999999,891.7999999999997 659.6151499999999,945.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB4" data-to="RejectVerdict" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Rejected / MFA Needed" points="1094.439333333333,789.4999999999999 1094.4393333333333,859.4999999999998 1019.0061333333331,859.4999999999998 1019.0061333333331,915.7999999999997 700.16455,915.7999999999997 700.16455,945.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB1" data-to="BankEngine" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Approved" points="277.1206666666666,789.4999999999999 277.1206666666666,883.4999999999998 412.42441666666656,883.4999999999998 412.42441666666656,927.7999999999997 821.2675499999998,927.7999999999997 821.2675499999998,945.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB2" data-to="BankEngine" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Approved" points="603.7036666666665,789.4999999999999 603.7036666666665,847.4999999999998 627.0801333333332,847.4999999999998 627.0801333333332,903.7999999999997 873.8211499999998,903.7999999999997 873.8211499999998,945.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB3" data-to="BankEngine" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Approved" points="891.0136666666667,789.4999999999999 891.0136666666665,847.4999999999998 871.0901333333331,847.4999999999998 871.0901333333331,891.7999999999997 926.3747499999997,891.7999999999997 926.3747499999997,945.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB4" data-to="BankEngine" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Approved" points="1187.2156666666665,789.4999999999999 1187.2156666666665,883.4999999999998 1208.6580333333332,883.4999999999998 1208.6580333333332,927.7999999999997 978.9283499999997,927.7999999999997 978.9283499999997,945.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="L3" data-to="BlockVerdict" data-label="Risk &gt;= 0.70 / Block Signature">
+  <rect x="367.04988333333324" y="544.4" width="156.64600000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="445.3728833333333" y="559.55" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Risk &gt;= 0.70 / Block Signature</text>
+</g>
+<g class="edge-label" data-from="L3" data-to="IsolationPrompt" data-label="Risk &lt; 0.70 Safe / Step-Up">
+  <rect x="656.8323833333332" y="374.6" width="135.85600000000005" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="724.7603833333332" y="389.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Risk &lt; 0.70 Safe / Step-Up</text>
+</g>
+<g class="edge-label" data-from="DB1" data-to="RejectVerdict" data-label="Rejected / MFA Needed">
+  <rect x="174.92758333333333" y="902.5" width="127.54" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="238.69758333333334" y="917.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Rejected / MFA Needed</text>
+</g>
+<g class="edge-label" data-from="DB2" data-to="RejectVerdict" data-label="Rejected / MFA Needed">
+  <rect x="462.5401333333332" y="878.5" width="127.54" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="526.3101333333332" y="893.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Rejected / MFA Needed</text>
+</g>
+<g class="edge-label" data-from="DB3" data-to="RejectVerdict" data-label="Rejected / MFA Needed">
+  <rect x="663.2501333333332" y="854.5" width="127.54" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="727.0201333333332" y="869.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Rejected / MFA Needed</text>
+</g>
+<g class="edge-label" data-from="DB4" data-to="RejectVerdict" data-label="Rejected / MFA Needed">
+  <rect x="955.0061333333331" y="866.5" width="127.54" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1018.7761333333331" y="881.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Rejected / MFA Needed</text>
+</g>
+<g class="edge-label" data-from="DB1" data-to="BankEngine" data-label="Approved">
+  <rect x="379.42441666666656" y="890.5" width="65.17" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="412.00941666666654" y="905.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Approved</text>
+</g>
+<g class="edge-label" data-from="DB2" data-to="BankEngine" data-label="Approved">
+  <rect x="594.0801333333332" y="854.5" width="65.17" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="626.6651333333332" y="869.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Approved</text>
+</g>
+<g class="edge-label" data-from="DB3" data-to="BankEngine" data-label="Approved">
+  <rect x="838.0901333333331" y="854.5" width="65.17" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="870.6751333333332" y="869.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Approved</text>
+</g>
+<g class="edge-label" data-from="DB4" data-to="BankEngine" data-label="Approved">
+  <rect x="1175.6580333333332" y="890.5" width="65.17" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1208.2430333333332" y="905.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Approved</text>
+</g>
+<g class="node" data-id="User" data-label="Untrusted User / API Input" data-shape="stadium">
+  <rect x="446.2472499999999" y="40" width="190.89099999999996" height="36.900000000000006" rx="18.450000000000003" ry="18.450000000000003" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="541.6927499999999" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Untrusted User / API Input</text>
+</g>
+<g class="node" data-id="L1" data-label="Layer 1: Normalizer &amp; De-obfuscator" data-shape="rectangle">
+  <rect x="416.6072499999999" y="124.9" width="250.17099999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="541.6927499999999" y="143.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Layer 1: Normalizer &amp; De-obfuscator</text>
+</g>
+<g class="node" data-id="L2" data-label="Layer 2: PII Redaction &amp; Tokenization" data-shape="rectangle">
+  <rect x="412.1612499999999" y="209.8" width="259.063" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="541.6927499999999" y="228.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Layer 2: PII Redaction &amp; Tokenization</text>
+</g>
+<g class="node" data-id="L3" data-label="Layer 3: Semantic Guardrail &amp; Composite Risk" data-shape="rectangle">
+  <rect x="388.0787499999999" y="294.70000000000005" width="307.22799999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="541.6927499999999" y="313.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Layer 3: Semantic Guardrail &amp; Composite Risk</text>
+</g>
+<g class="node" data-id="BlockVerdict" data-label="Immediate Block &amp; SOC Audit Log" data-shape="rectangle">
+  <rect x="330.09738333333325" y="617.7" width="230.90499999999994" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="445.54988333333324" y="636.1500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Immediate Block &amp; SOC Audit Log</text>
+</g>
+<g class="node" data-id="IsolationPrompt" data-label="Prompt Isolation &amp; Honeytoken Insertion" data-shape="rectangle">
+  <rect x="589.0023833333332" y="447.90000000000003" width="271.65999999999997" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="724.8323833333332" y="466.35" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Prompt Isolation &amp; Honeytoken Insertion</text>
+</g>
+<g class="node" data-id="Agent" data-label="Banking Assistant Reasoning Agent" data-shape="rectangle">
+  <rect x="599.7468833333332" y="532.8" width="250.17099999999994" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="724.8323833333332" y="551.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Banking Assistant Reasoning Agent</text>
+</g>
+<g class="node" data-id="L4" data-label="Layer 4: Deterministic Tool Gate" data-shape="rectangle">
+  <rect x="611.2323833333332" y="617.7" width="227.19999999999993" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="724.8323833333332" y="636.1500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Layer 4: Deterministic Tool Gate</text>
+</g>
+<g class="node" data-id="RejectVerdict" data-label="Decline / Step-Up Challenge" data-shape="rectangle">
+  <rect x="537.96695" y="945.8" width="202.74699999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="639.3404499999999" y="964.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Decline / Step-Up Challenge</text>
+</g>
+<g class="node" data-id="BankEngine" data-label="Core Banking Ledger ACID Execution" data-shape="cylinder">
+  <rect x="768.7139499999998" y="952.8" width="262.7679999999999" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="768.7139499999998" y1="952.8" x2="768.7139499999998" y2="989.6999999999999" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1031.4819499999999" y1="952.8" x2="1031.4819499999999" y2="989.6999999999999" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="900.0979499999999" cy="989.6999999999999" rx="131.38399999999996" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="900.0979499999999" cy="952.8" rx="131.38399999999996" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="900.0979499999999" y="971.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Core Banking Ledger ACID Execution</text>
+</g>
+<g class="node" data-id="L5" data-label="Layer 5: Egress Sanitizer &amp; Canary Scrub" data-shape="rectangle">
+  <rect x="755.3759499999999" y="1038.6999999999998" width="289.44399999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="900.0979499999999" y="1057.1499999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Layer 5: Egress Sanitizer &amp; Canary Scrub</text>
+</g>
+<g class="node" data-id="EgressResponse" data-label="Sanitized Response to Client" data-shape="stadium">
+  <rect x="796.5014499999997" y="1123.6" width="207.19299999999993" height="36.900000000000006" rx="18.450000000000003" ry="18.450000000000003" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="900.0979499999997" y="1142.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Sanitized Response to Client</text>
+</g>
+<g class="node" data-id="DB1" data-label="Ambiguity Boundary: Amount &amp; Recipient Required" data-shape="rectangle">
+  <rect x="56" y="752.5999999999999" width="331.6809999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="221.84049999999996" y="771.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Ambiguity Boundary: Amount &amp; Recipient Required</text>
+</g>
+<g class="node" data-id="DB2" data-label="Memo Injection Sanitizer &amp; Semantic Scan" data-shape="rectangle">
+  <rect x="415.6809999999999" y="752.5999999999999" width="282.034" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="556.6979999999999" y="771.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Memo Injection Sanitizer &amp; Semantic Scan</text>
+</g>
+<g class="node" data-id="DB3" data-label="Ownership &amp; Least Privilege Check" data-shape="rectangle">
+  <rect x="725.7149999999999" y="752.5999999999999" width="247.94799999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="849.6889999999999" y="771.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Ownership &amp; Least Privilege Check</text>
+</g>
+<g class="node" data-id="DB4" data-label="Step-Up MFA Ceiling Verification &gt; $1,000" data-shape="rectangle">
+  <rect x="1001.6629999999998" y="752.5999999999999" width="278.3289999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1140.8274999999996" y="771.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Step-Up MFA Ceiling Verification &gt; $1,000</text>
+</g>
+</svg>

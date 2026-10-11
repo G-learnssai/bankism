@@ -1,0 +1,24 @@
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv
+env/
+venv/
+ENV/
+
+# Temporary and Lock Files
+~$*
+*.tmp
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
